@@ -1,4 +1,7 @@
 #include <stdio.h>
+#define CHECKUPTO 10000
+
+
 struct primes
 {
 	int prime;
@@ -11,15 +14,14 @@ int main(){
 	record=fopen("recordOfPlay.txt","wb");
  */
 
-	int checkUpTo = 10000;
-	int primePlay[10000] = {}; 
-	for(int i=0;i<checkUpTo;++i) {
+	int primePlay[CHECKUPTO] = {}; 
+	for(int i=0;i<CHECKUPTO;++i) {
 		primePlay[i] = 1+i;
 	}
 	int currentIteratedNumber;
 	int previousIteratedNumber;
 
-	for(int j = 0; j < checkUpTo; j++) {
+	for(int j = 0; j < CHECKUPTO; j++) {
 	     printf("%d ", primePlay[j]);
 	}
 	printf("\n");
