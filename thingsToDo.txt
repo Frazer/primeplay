@@ -1,0 +1,10 @@
+
+
+
+when its time to extend arrays:
+int* myrealloced_array = realloc(numbersArray, myarray_size);
+   if (myrealloced_array) {
+     numbersArray = myrealloced_array;
+   } else {
+     // deal with realloc failing because memory could not be allocated.
+   }
